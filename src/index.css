@@ -1,0 +1,83 @@
+body {
+	background-color:#add8e6;
+	text-align: justify;
+	font-family: 'Arial';
+}
+
+h1 {
+	font-family: 'Charm';
+	font-style: italic;
+	font-size: 5em;
+	text-align: center;
+}
+
+.wrapper {
+	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+	align-items: center;
+	grid-gap: 30px; 
+}
+
+#containerWraper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 30px; 
+	flex-wrap: wrap;
+}
+
+.container {
+	width: 20em;
+	height: 35em;
+}
+
+#btnNewContainer {
+	width: 64px;
+	height: 64px;
+	background-color:#add8e6;
+	background-image: url("plusIcon.png");
+	outline: none;
+	border:none;
+}
+
+#btnNewContainer:hover  {
+	background-image: url("plusIconHover.png");
+}
+
+.doted {
+	border: dashed;
+}
+
+.imageTemplate {
+	width:20em;
+	height:20em;
+	object-fit: cover;
+}
+
+.center {
+	height:100%;
+	color:#333333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-wrap: break-word;
+}
+
+.buttonTemplate {
+	background-color: #333333;
+	color:white;
+	cursor: pointer;
+	height:5em;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: 15px; 
+	display: block;
+}
+
+.descriptionTemplate {
+	width:20em;
+	height:10em;
+	word-wrap: break-word;
+}
