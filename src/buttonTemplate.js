@@ -6,12 +6,12 @@ class ButtonTemplate  {
 		this.element = CreateElement(element);
 		let childStrong = ElementsData.Elements['ButtonTemplateChildStrong'];
 		childStrong.parent = this.element;
-     	this.childStrong = CreateElement(childStrong);
+		this.childStrong = CreateElement(childStrong);
 	}
 
-    AddClickEvent() {
+	AddClickEvent() {
 		AddToggleEvent(this.element);
-    }
+	}
 };
 
 export default ButtonTemplate;

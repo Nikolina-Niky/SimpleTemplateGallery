@@ -7,7 +7,7 @@ const AddProperties=(obj, newElement) => {
     }
     newElement.id = obj.id + count; 
     for (let i = 0; i < obj.classList.length; i++) {
-      newElement.classList.add(obj.classList[i]);
+        newElement.classList.add(obj.classList[i]);
     }
     if (obj.hasOwnProperty('text')) {
         newElement.innerText = obj.text;
@@ -15,7 +15,7 @@ const AddProperties=(obj, newElement) => {
 }
 
 const CreateElement = (element) => {
-	let newElement = document.createElement(element.tag);
+    let newElement = document.createElement(element.tag);
     AddProperties(element, newElement);
     element.parent.appendChild(newElement);
     return newElement;
@@ -25,9 +25,9 @@ const AddToggleEvent = (el) => {
     el.classList.toggle("active");
     let toggleEl = el.nextElementSibling;
     if (toggleEl.style.display === "block") {
-            toggleEl.style.display = "none";
+        toggleEl.style.display = "none";
     } else {
-            toggleEl.style.display = "block";
+        toggleEl.style.display = "block";
     }
 }
 

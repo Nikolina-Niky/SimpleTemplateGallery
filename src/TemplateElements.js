@@ -5,7 +5,7 @@ import ButtonTemplate from './buttonTemplate';
 import DescriptionTemplate from './descriptionTemplate';
 
 const FactoryElements = {
-	Container,
+    Container,
     ImageTemplate,
     ButtonTemplate,
     DescriptionTemplate
