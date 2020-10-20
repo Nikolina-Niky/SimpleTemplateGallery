@@ -12,19 +12,19 @@ const FactoryElements = {
 };
 
  const CreateTemplateElement = (type, parent) => {  
- 	if ((parent != null) && (type in (ElementsData.Elements)) && (type in FactoryElements)) {
- 		let templateElementData = ElementsData.Elements[type];
-		templateElementData.parent = parent;
-	    const templateElement = FactoryElements[type];
+	if ((parent != null) && (type in (ElementsData.Elements)) && (type in FactoryElements)) {
+        let templateElementData = ElementsData.Elements[type];
+        templateElementData.parent = parent;
+        const templateElement = FactoryElements[type];
 
         let Element = {};
-	    Element = new templateElement(templateElementData);
-    	Element.element.addEventListener("click", (e) => {
-    		Element.AddClickEvent();
-    	});
+        Element = new templateElement(templateElementData);
+        Element.element.addEventListener("click", (e) => {
+		  Element.AddClickEvent();
+        });
 
-	    return Element.element;
- 	} 
+        return Element.element;
+	} 
 }
 
 export default CreateTemplateElement;
