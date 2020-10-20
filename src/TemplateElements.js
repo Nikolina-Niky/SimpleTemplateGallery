@@ -12,7 +12,7 @@ const FactoryElements = {
 };
 
  const CreateTemplateElement = (type, parent) => {  
-	if ((parent != null) && (type in (ElementsData.Elements)) && (type in FactoryElements)) {
+    if ((parent != null) && (type in (ElementsData.Elements)) && (type in FactoryElements)) {
         let templateElementData = ElementsData.Elements[type];
         templateElementData.parent = parent;
         const templateElement = FactoryElements[type];
@@ -20,11 +20,11 @@ const FactoryElements = {
         let Element = {};
         Element = new templateElement(templateElementData);
         Element.element.addEventListener("click", (e) => {
-		  Element.AddClickEvent();
+            Element.AddClickEvent();
         });
 
         return Element.element;
-	} 
+    } 
 }
 
 export default CreateTemplateElement;
